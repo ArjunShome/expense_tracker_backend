@@ -219,3 +219,6 @@ __marimo__/
 
 # Pycharm specific
 .idea
+
+# ignore uv lock file
+uv.lock
