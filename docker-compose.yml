@@ -1,0 +1,14 @@
+# Database is hosted on Neon (https://neon.tech).
+# Set DATABASE_URL in your .env file — no local Postgres container needed.
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: expense_tracker_app
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
